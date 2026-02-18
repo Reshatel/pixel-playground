@@ -1,0 +1,73 @@
+.site-header {
+  border-bottom: 1px solid rgba(46, 31, 22, 0.2);
+  padding: 2rem 0;
+  background-color: var(--bg-main);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem; /* відстань між логотипом, меню і автором */
+}
+
+.logo {
+  font-size: 2.75rem; /* трохи більший шрифт */
+  font-weight: 700;
+  color: var(--accent-orange);
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05) rotate(-2deg);
+  color: var(--accent-brown);
+}
+
+/* НАВІГАЦІЯ */
+.nav-menu {
+  display: flex;
+  gap: 3rem; /* збільшено для більшого “дихання” */
+  margin-left: auto; /* посунути правіше */
+}
+
+.nav-menu a {
+  font-size: 1.5rem; /* збільшений шрифт */
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent-orange);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-menu a:hover {
+  color: var(--accent-brown);
+}
+
+.nav-menu a:hover::after {
+  width: 100%; /* underline анімація при hover */
+}
+
+/* AUTHOR */
+.author {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-left: 2rem;
+  white-space: nowrap;
+}

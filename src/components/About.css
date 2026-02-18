@@ -1,0 +1,323 @@
+/* ===== COLORS (тепліші) ===== */
+:root {
+  --bg-main: #fff8f0;
+  --bg-soft: #fffdf8;
+
+  --text-main: #2e1f16;
+  --text-muted: #7a6654;
+
+  --accent-orange: #f6a75c;
+  --accent-beige: #f9e4d4;
+  --accent-brown: #b37b4f;
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 9rem 0; /* 6rem * 1.5 */
+  background: linear-gradient(180deg, var(--bg-main) 0%, var(--bg-soft) 100%);
+}
+
+.container {
+  max-width: 123.75rem; /* 82.5rem * 1.5 */
+  padding: 0 3.75rem;  /* 2.5rem * 1.5 */
+  margin: 0 auto;
+}
+
+.about-hero {
+  max-width: 71.25rem;
+  margin: 0 auto 10.3125rem; /* центрування горизонтально */
+  text-align: center;        /* текст по центру */
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* вирівнювання по центру */
+  justify-content: center;   /* центр по вертикалі в межах секції */
+  gap: 1.5rem;               /* відстань між заголовком, текстом і кнопкою */
+}
+
+.about-hero h2 {
+  font-size: clamp(4.125rem, 6vw, 6.75rem);
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.about-hero p {
+  font-size: 1.875rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 45rem; /* обмежує ширину абзацу */
+}
+
+
+/* SECTION STYLING */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2.25rem; /* текст ближче до графіки */
+  margin-bottom: 30.25rem; /* 7.5rem * 1.5 */
+}
+
+.about-section.reverse {
+  direction: rtl;
+}
+.about-section.reverse .about-text { direction: ltr; }
+
+.about-text .label {
+  font-size: 1.5rem; /* 0.8125rem * 1.5 */
+  letter-spacing: 0.141rem; /* 0.094rem * 1.5 */
+  text-transform: uppercase;
+  color: var(--accent-brown);
+  font-weight: 600;
+}
+
+.about-text h3 {
+  font-size: clamp(3rem, 4vw, 3.75rem); /* 2rem * 1.5 -> 3rem, 2.5rem * 1.5 -> 3.75rem */
+  margin: 1.3125rem 0 1.6875rem; /* 0.875rem 0 1.125rem * 1.5 */
+  color: var(--text-main);
+}
+
+.about-text p {
+  font-size: 2rem; /* 1.25rem * 1.5 */
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 45rem; /* 30rem * 1.5 */
+}
+
+/* BUTTON */
+.about-btn {
+  margin-top: 1.875rem; /* 1.25rem * 1.5 */
+  padding: 1.125rem 2.25rem; /* 0.75rem 1.5rem * 1.5 */
+  background: var(--accent-orange);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem; /* 0.5rem * 1.5 */
+  cursor: pointer;
+}
+.about-btn:hover { opacity: 0.9; }
+
+/* SOCIAL LINKS */
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: start;
+  gap: 1.5rem;
+}
+
+.social-links img {
+  width: 3rem; /* розмір іконок */
+  height: 3rem;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.15);
+}
+
+/* IMAGES */
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 1.875rem 3.75rem rgba(46,31,22,0.1)); /* 1.25rem 2.5rem *1.5 */
+}
+
+.about-image.large img { max-width: 48.75rem; } /* 32.5rem *1.5 */
+.about-image.small img { max-width: 40.75rem; } /* 22.5rem *1.5 */
+
+/* Виправлення другої картинки: займає всю колону */
+.about-section.reverse .about-image {
+  justify-self: end; /* картинка прижата праворуч колонки */
+  margin-left: 0;
+}
+
+/* STRIP */
+.about-strip { display: flex; gap: 1.3125rem; flex-wrap: wrap; margin-bottom: 7.5rem; } /* 0.875rem * 1.5, 5rem*1.5 */
+.about-strip span {
+  padding: 0.9375rem 1.6875rem; /* 0.625rem 1.125rem *1.5 */
+  border-radius: 999px;
+  background: var(--accent-beige);
+  color: var(--accent-orange);
+  font-size: 1.3125rem; /* 0.875rem *1.5 */
+  font-weight: 500;
+}
+
+/* AUTHOR */
+.about-author { display: flex; flex-direction: column; gap: 0.5625rem; font-size: 1.40625rem; } /* 0.375rem, 0.9375rem *1.5 */
+.about-author span { color: var(--text-muted); }
+.about-author strong { color: var(--text-main); }
+.about-author a { margin-top: 0.75rem; color: var(--accent-brown); font-weight: 500; width: fit-content; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-section,
+  .about-section.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 3.75rem; /* 2.5rem * 1.5 */
+  }
+
+  .about-image.large img,
+  .about-image.small img {
+    max-width: 100%;
+  }
+}
+
+.tag-cloud {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tag-cloud span {
+  padding: 0.625rem 1rem;
+  border-radius: 999px;
+  background: var(--accent-beige);
+  color: var(--accent-brown);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.showcase-section {
+  text-align: center;
+  margin-bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.showcase-section h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.showcase-section p {
+  font-size: 1.75rem;
+  color: var(--text-muted);
+  max-width: 60rem;
+}
+
+.showcase-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.showcase-card {
+  background: var(--bg-soft);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 30rem;
+  max-width: 90vw;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.showcase-card img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+.showcase-card h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.showcase-card p {
+  font-size: 2rem;
+  color: var(--text-muted);
+}
+
+.showcase-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 2rem 4rem rgba(46, 31, 22, 0.15);
+}
+
+
+@media (max-width: 900px) {
+  .showcase-cards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .showcase-card {
+    width: 90%;
+  }
+}
+
+.about-author {
+  margin-top: 6rem;
+  padding: 3rem 2rem;
+  background: var(--bg-soft);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 3rem rgba(46, 31, 22, 0.08);
+  flex-wrap: wrap;
+}
+
+.author-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author-item .label {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  color: var(--accent-brown);
+  font-weight: 600;
+}
+
+.author-item strong {
+  font-size: 1.75rem;
+  color: var(--text-main);
+}
+
+.author-item p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 200px;
+}
+
+.author-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-orange);
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.author-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.author-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 900px) {
+  .about-author {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

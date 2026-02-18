@@ -1,0 +1,33 @@
+.site-footer {
+  border-top: 1px solid rgba(46, 31, 22, 0.2);
+  background-color: var(--bg-main);
+  padding: 3rem 0;
+  margin-top: auto;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copy {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-socials a img {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.footer-socials a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}

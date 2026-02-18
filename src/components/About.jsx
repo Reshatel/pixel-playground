@@ -33,7 +33,7 @@ export default function About({ handleButtonClick }) {
 
           <div className="about-image large">
             <img
-              src="/undraw_setup_fzje.svg"
+              src="undraw_setup_fzje.svg"
               alt="Architecture Illustration"
             />
           </div>
@@ -80,7 +80,7 @@ export default function About({ handleButtonClick }) {
 
           <div className="about-image small">
             <img
-              src="/undraw_to-the-stars_tz9v.svg"
+              src="undraw_to-the-stars_tz9v.svg"
               alt="Performance Illustration"
             />
           </div>
@@ -108,7 +108,7 @@ export default function About({ handleButtonClick }) {
 
   <div className="about-image medium">
     <img
-      src="/undraw_java-script-frameworks_i8a4.svg"
+      src="undraw_java-script-frameworks_i8a4.svg"
       alt="Creative Tools Illustration"
     />
   </div>
@@ -121,7 +121,7 @@ export default function About({ handleButtonClick }) {
 
   <div className="showcase-cards">
     <div className="showcase-card">
-      <img src="/undraw_design-thinking_8qg2.svg" alt="Інтерактивність" />
+      <img src="undraw_design-thinking_8qg2.svg" alt="Інтерактивність" />
       <h3>Інтерактивність</h3>
       <p>
         Кожна кнопка, картка та елемент на сторінці реагує на користувача.
@@ -130,7 +130,7 @@ export default function About({ handleButtonClick }) {
     </div>
 
     <div className="showcase-card">
-      <img src="/undraw_spreadsheets_bh6n.svg" alt="Технології" />
+      <img src="undraw_spreadsheets_bh6n.svg" alt="Технології" />
       <h3>Технології</h3>
       <p>
         Сайт створено на React + Vite, використовуються фреймворки для анімацій
@@ -139,7 +139,7 @@ export default function About({ handleButtonClick }) {
     </div>
 
     <div className="showcase-card">
-      <img src="/undraw_winter-designer_a6kq.svg" alt="Дизайн" />
+      <img src="undraw_winter-designer_a6kq.svg" alt="Дизайн" />
       <h3>Дизайн</h3>
       <p>
         Усі елементи створені так, щоб бути одночасно стильними та функціональними та виглядало як щось схоже на справжній проєкт :).

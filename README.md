@@ -1,16 +1,32 @@
-# React + Vite
+# Pixel Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌐 Демонстрація
+Проєкт опублікований на GitHub Pages:
+https://reshatel.github.io/pixel-playground
 
-Currently, two official plugins are available:
+**Pixel Playground** – демонстраційний вебсайт, створений для практики сучасної фронтенд-розробки та відпрацювання навичок у React. Проєкт є **односторінковим сайтом**, який показує компонентний підхід, інтерактивні елементи та сучасні UI-практики.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> ⚠️ Це навчальний проєкт. Жодні кнопки та посилання не ведуть на реальні сторінки.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Технології
 
-## Expanding the ESLint configuration
+- **React** – компонентна структура та стан
+- **Vite** – швидкий dev-сервер та збірка
+- **CSS / Flexbox / Grid** – адаптивний макет
+- **Simple Icons** – іконки соцмереж
+- **Undraw Illustrations** – для візуального оформлення
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📚 Структура проєкту
+
+
+- **Header** – верхня панель з логотипом та навігацією  
+- **About** – головний блок із описом проєкту, картками та інформацією про автора  
+- **Footer** – контактна інформація та соцмережі  
+
+## 👨‍💻 Автор
+Максим Остапчук 
+Проєкт створено для проходження виробничої практики в Онікс, для ЦДУ 
